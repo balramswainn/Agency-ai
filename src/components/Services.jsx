@@ -1,6 +1,7 @@
 import React from 'react'
 import assets from '../assets/assets'
 import Title from './Title'
+import ServiceCard from './ServiceCard'
 
 const Services = () => {
 
@@ -34,13 +35,11 @@ const Services = () => {
     
     <Title title='How can we help?' desc='From strategy to execution, we craft digital solutions that move your business forward.' />
 
-    {servicesData.map((services,index)=>(
-      <div key={index}>
-        <img src={services.icon} alt="" />
-        <h2>{services.title}</h2>
-        <p>{services.description}</p>
-      </div>
-    ))}
+    <div className='flex flex-col md:grid grid-cols-2'>
+      {servicesData.map((service,index)=>(
+        <ServiceCard key={index} service={service} index={index} />
+      ))}
+    </div>
       
     </div>
   )
