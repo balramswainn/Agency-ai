@@ -9,7 +9,7 @@ const OurWork = () => {
     {
       title:'Mobile app marketing',
       description: 'We turn bold ideas into powerful digital solutions that connect, engage...',
-      imgage:assets.work_mobile_app,
+      image:assets.work_mobile_app,
     },
     {
       title:'Dashboard management',
@@ -18,7 +18,7 @@ const OurWork = () => {
     },{
       title:'Mobile app marketing',
       description: 'We help you create a marketing strategy that drives results.',
-      imgage:assets.work_fitness_app,
+      image:assets.work_fitness_app,
     },
   ]
   return (
