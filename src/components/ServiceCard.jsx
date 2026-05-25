@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import { motion } from "motion/react"
 
-const ServiceCard = ({service}) => {
+const ServiceCard = ({service,index}) => {
 
   const [position, setPosition] = useState({x: 0, y:0})
   const [visible, setVisible] = useState(false);
